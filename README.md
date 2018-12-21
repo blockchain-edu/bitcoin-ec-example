@@ -1,1 +1,29 @@
-# bitcoin-ec-example
+# blockchain-ec
+
+## 使い方
+
+```
+$npm i
+$npm run serve
+```
+
+そしてlocahost:8080にブラウザなどでアクセスする.
+
+## API
+#### GET /invoice 
+##### parameter
+- value
+買ったものの値段
+- orderId
+購入を管理するId
+
+##### return
+- invoice bip21形式のinvoice
+
+##### リクエスト例
+http://localhost:3000/invoice?value=0.1&orderId=1
+
+##### レスポンス例
+{
+    "invoice": "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=0.1"
+}
