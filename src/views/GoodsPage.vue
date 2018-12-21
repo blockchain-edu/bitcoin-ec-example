@@ -1,6 +1,6 @@
 <template>
 <ul class=goodslist>
-<li class=item><Goods name="goods" value=0.1 img="https://gyazo.com/2d358dca27f39a05b5f4f142297995d9.jpg"></Goods></li>
+<li class=item><Goods name="goods" amount=0.1 img="https://gyazo.com/2d358dca27f39a05b5f4f142297995d9.jpg"></Goods></li>
 </ul>
 </template>
 

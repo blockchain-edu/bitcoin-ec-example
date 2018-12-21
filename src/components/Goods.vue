@@ -4,8 +4,8 @@
     <p class="picture">
       <img :src="img">
     </p>
-    <h5>{{ value }} btc</h5>
-    <Button :value="value"></Button>
+    <h5>{{ amount }} btc</h5>
+    <Button :amount="amount"></Button>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default class Goods extends Vue {
   @Prop()
   public name!: string;
   @Prop()
-  public value!: number;
+  public amount!: number;
   @Prop()
   public img!: string;
 }

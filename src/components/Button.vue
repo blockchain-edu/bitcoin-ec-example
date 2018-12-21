@@ -18,7 +18,7 @@ export default class Button extends Vue {
   public msg?: string;
 
   @Prop()
-  public value!: number;
+  public amount!: number;
 
   private orderId: number = 0;
   private qrSrc: string =
@@ -29,9 +29,9 @@ export default class Button extends Vue {
     try {
       const response: any = await RestClient.send(
         "GET",
-        `http://localhost:3000/invoice?value=${this.value}&orderId=${
+        `http://localhost:3000/invoice?value=${this.amount}&orderId=${
           this.orderId
-        }`
+        }`,
       );
       this.qrSrc =
         "http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=" +

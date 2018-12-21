@@ -12,7 +12,7 @@ $npm run serve
 ## API
 #### GET /invoice 
 ##### parameter
-- value
+- amount
 買ったものの値段
 - orderId
 購入を管理するId
@@ -21,7 +21,7 @@ $npm run serve
 - invoice bip21形式のinvoice
 
 ##### リクエスト例
-http://localhost:3000/invoice?value=0.1&orderId=1
+http://localhost:3000/invoice?amount=0.1&orderId=1
 
 ##### レスポンス例
 {
