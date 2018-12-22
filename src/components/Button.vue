@@ -29,7 +29,7 @@ export default class Button extends Vue {
     try {
       const response: any = await RestClient.send(
         "GET",
-        `http://localhost:3000/invoice?value=${this.amount}&orderId=${
+        `http://localhost:3000/invoice?amount=${this.amount}&orderId=${
           this.orderId
         }`,
       );
