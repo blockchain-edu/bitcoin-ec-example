@@ -3,8 +3,8 @@
 ## 使い方
 
 ```
-$npm i
-$npm run serve
+$ npm i
+$ npm run serve
 ```
 
 そしてlocahost:8080にブラウザなどでアクセスする.
