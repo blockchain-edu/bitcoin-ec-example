@@ -21,7 +21,7 @@ $npm run serve
 - invoice bip21形式のinvoice
 
 ##### リクエスト例
-http://localhost:3000/invoice?amount=0.1&orderId=1
+http://localhost:3000/invoice?amount=0.1&order_id=0
 
 ##### レスポンス例
 {
